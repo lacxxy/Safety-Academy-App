@@ -42,7 +42,6 @@ class _Home extends State<Home> {
     Response response;
     response = await Dio().get("https://www.achaonihao.com/SafeTraining/itemlist.php");
     item.add(json.decode(response.data));
-    print(item);
     setState(() {
       myitem = item;
     });

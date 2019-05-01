@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/page/exam.dart';
+import 'package:flutter_app/page/exam/exam.dart';
 import 'package:flutter_app/page/home/home.dart';
 
 class Index extends StatefulWidget {

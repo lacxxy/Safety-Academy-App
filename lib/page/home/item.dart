@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:dio/dio.dart';
 import 'dart:convert';
-import 'package:flutter_app/page/exam.dart';
+import 'package:flutter_app/page/exam/exam.dart';
 import 'package:flutter_app/page/home/detail.dart';
 import 'package:flutter_full_pdf_viewer/flutter_full_pdf_viewer.dart';
 import 'package:flutter_full_pdf_viewer/full_pdf_viewer_plugin.dart';
