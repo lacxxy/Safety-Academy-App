@@ -13,6 +13,7 @@ class Item extends StatelessWidget {
   final List all;
   @override
   Widget build(BuildContext context) {
+    print(all);
     return GestureDetector(
         onTap: () {
           //getpdf();
@@ -31,10 +32,13 @@ class Item extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
             ),
-            new Text(
-              all[0][id]['name'],
-              style: TextStyle(fontSize: 30.0),
-            ),
+            Container(
+              padding: EdgeInsets.all(15.0),
+              child:Text(
+                all[0][id]['name'],
+                style: TextStyle(fontSize: 15.0),
+              ),
+            )
           ],
         )));
   }

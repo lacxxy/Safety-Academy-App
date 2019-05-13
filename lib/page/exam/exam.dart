@@ -77,7 +77,7 @@ class Select extends StatelessWidget {
         child: Center(
           child: Text(
             name,
-            style: TextStyle(color: Colors.white, fontSize: 20.0),
+            style: TextStyle(color: Colors.white,),
           ),
         ),
       ),

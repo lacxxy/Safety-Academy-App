@@ -32,31 +32,31 @@ class _Detail extends State<Detail> {
   Widget build(BuildContext context) {
     if(name!=null){
       return Container(
+      color: Colors.white,
+      
       child: ListView(children: <Widget>[
-        Center(
-          child: Image.network(
-            pic,
-            fit: BoxFit.fill,
+        Card(
+          child: Center(
+          child: 
+            Column(
+              children: <Widget>[
+                Image.network(
+                  pic,
+                  fit: BoxFit.fill,
+                ),
+                Center(
+                  child: Text(name,
+                    style: TextStyle(
+                      fontSize: 25.0,
+                      color: Colors.black,
+                      decoration: TextDecoration.none,
+                      fontWeight:FontWeight.normal
+                    )
+                ),
+            ),
+            ],
+            )
           ),
-        ),
-        Center(
-          child: Text(name,
-              style: TextStyle(
-                  fontSize: 35.0,
-                  color: Colors.black,
-                  decoration: TextDecoration.none)),
-        ),
-        Center(
-          child: MaterialButton(
-              onPressed: () {
-                print(pdf);
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Pdf(url: pdf)));
-              },
-              child: Text("查看详情"),
-              color: Colors.blue,
-              textColor: Colors.white,
-              minWidth: 100.0),
         ),
         Card(
           child: Column(
